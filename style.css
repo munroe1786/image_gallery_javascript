@@ -16,6 +16,7 @@ section {
 
 .palm-gallery {
     width: 50%;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -28,4 +29,22 @@ section {
     justify-content: center;
     align-items: center;
     background-color:lightskyblue;
+}
+
+.palm-preview {
+    display: flex;
+    width: 80%;
+    border: 2px solid lightskyblue;
+}
+
+.palm-preview img {
+    height: 100px;
+    flex-grow: 1;
+    opacity: 0.6;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+.img.palm-active {
+    opacity: 1;
 }
