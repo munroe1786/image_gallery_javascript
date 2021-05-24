@@ -4,7 +4,9 @@ function imageGallery() {
 
     previews.forEach(preview => {
         preview.addEventListener('click', function() {
-            console.log(this);
+            const smallSrc = this.src;
+            const largeSrc = smallSrc.replace('small', 'large');
+            highlight.src = largeSrc;
         });
     });
 }
