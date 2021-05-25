@@ -4,14 +4,9 @@
     box-sizing: border-box;
 }
 
-.gallery-highlight {
-    width: 80%;
-    height: 50%;
-}
-
 section {
-    display: flex;
     height: 100vh;
+    display: flex;
     background:lightskyblue;
     font-family: "Roboto", sans-serif;
 }
@@ -33,6 +28,20 @@ section {
     background-color:lightskyblue;
 }
 
+.palm-tree-description h1 {
+    padding: 10px;
+    font-size: 40px;
+}
+
+.palm-tree-description p {
+    font-size: 20px;
+}
+
+.gallery-highlight {
+    width: 80%;
+    height: 50%;
+}
+
 .palm-preview {
     display: flex;
     width: 80%;
@@ -40,13 +49,13 @@ section {
 }
 
 .palm-preview img {
-    height: 100px;
     flex-grow: 1;
+    height: 100px;
     opacity: 0.5;
-    cursor: pointer;
     transition: opacity 0.4s ease;
+    cursor: pointer;
 }
 
-.img.palm-active {
+img.palm-active {
     opacity: 1;
 }
